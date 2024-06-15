@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LR5YM95N8C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LR5YM95N8C');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="events">
+            <div class="time-label" style="justify-content: center;">2日目</div>
+            <div class="event">
+                <div id="cl">3-A</div>
+                <div class="title">Oz~帰宅部の冒険~</div>
+                <div id="pl">本106</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-B</div>
+                <div class="title">迷探偵アリスのお茶会</div>
+                <div id="pl">本205</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-C</div>
+                <div class="title">Peter・Pan</div>
+                <div id="pl">本104</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-D</div>
+                <div class="title">Musical 美女たちと野獣</div>
+                <div id="pl">本103</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-E</div>
+                <div class="title">こぶた工務店</div>
+                <div id="pl">本302</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-F</div>
+                <div class="title">シン・デレラ</div>
+                <div id="pl">本209</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-G</div>
+                <div class="title">はしれジョージ</div>
+                <div id="pl">本202</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-H</div>
+                <div class="title">妖怪ｳｫｯﾁ 思春期だﾆｬﾝ</div>
+                <div id="pl">本204</div>
+            </div>
+            <div class="event">
+                <div id="cl">3-I</div>
+                <div class="title" style="font-size: 0.6em;">名門の森~失われた参考書代~</div>
+                <div id="pl">本109</div>
+            </div>
+
+            <div class="event">
+                <div id="cl">オーケストラ部</div>
+                <div class="title">あつまれふなおけの森</div>
+                <div id="pl">音楽室</div>
+            </div>
+            <div class="event">
+                <div id="cl">合唱部</div>
+                <div class="title">ふなこーらす</div>
+                <div id="pl">音楽室</div>
+            </div>
+            <div class="event">
+                <div id="cl">放送委員会</div>
+                <div class="title">FBC上映会</div>
+                <div id="pl">化学第二</div>
+            </div>
+            <div class="event">
+                <div id="cl">自然科学部</div>
+                <div class="title">船高の科学は世界一！</div>
+                <div id="pl">物/化第一</div>
+            </div>
+            <div class="event">
+                <div id="cl">地学部</div>
+                <div class="title">TERRA SCIENTIA</div>
+                <div id="pl">地学室</div>
+            </div>
+            <div class="event">
+                <div id="cl">アーチェリー部</div>
+                <div class="title">アーチェリー試射体験</div>
+                <div id="pl">ｾﾐﾅｰ/和室</div>
+            </div>
+            <div class="event">
+                <div id="cl">クイズ研究部</div>
+                <div class="title">Q技大会</div>
+                <div id="pl">1多目</div>
+            </div>
+            <div class="event">
+                <div id="cl">陶芸部</div>
+                <div class="title">工芸品販売・作品展示</div>
+                <div id="pl">工芸室</div>
+            </div>
+            <div class="event">
+                <div id="cl">茶道部</div>
+                <div class="title">雅</div>
+                <div id="pl">新202</div>
+            </div>
+            <div class="event">
+                <div id="cl">演劇部</div>
+                <div class="title">国士無双</div>
+                <div id="pl">2多目</div>
+            </div>
+            <div class="event">
+                <div id="cl">軽音学部</div>
+                <div class="title">FUNA ROCK FES</div>
+                <div id="pl">ｾﾐﾅｰ3F</div>
+            </div>
+            <div class="event">
+                <div id="cl">ジャズバンド部</div>
+                <div class="title">ふなJAZZ 2024</div>
+                <div id="pl">体育館</div>
+            </div>
+            <div class="event">
+                <div id="cl">ダンス部</div>
+                <div class="title">This Is Me</div>
+                <div id="pl">体育館</div>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="time-labels">
+                <div class="time-label">09:00</div>
+                <div class="time-label">10:00</div>
+                <div class="time-label">11:00</div>
+                <div class="time-label">12:00</div>
+                <div class="time-label">13:00</div>
+                <div class="time-label">14:00</div>
+                <div class="time-label">15:00</div>
+                <div class="time-label">16:00</div>
+                <div class="time-label">17:00</div>
+            </div>
+            <div class="schedule">
+                <!-- 1個目 -->
+                <div class="event-block" style="grid-row: 1; grid-column: 7 / span 6;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 1; grid-column: 19 / span 6;">
+                    <span class="start-time">10:30</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 1; grid-column: 31 / span 6;">
+                    <span class="start-time">11:30</span>
+                    <span class="end-time">12:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 1; grid-column: 43 / span 6;">
+                    <span class="start-time">12:30</span>
+                    <span class="end-time">13:00</span>
+                </div>
+                <!-- 2個目 -->
+                <div class="event-block" style="grid-row: 2; grid-column: 7 / span 6;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 2; grid-column: 19 / span 6;">
+                    <span class="start-time">10:30</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 2; grid-column: 31 / span 6;">
+                    <span class="start-time">11:30</span>
+                    <span class="end-time">12:00</span>
+                </div>
+                <!-- 3個目 -->
+                <div class="event-block" style="grid-row: 3; grid-column: 7 / span 4;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">9:50</span>
+                </div>
+                <div class="event-block" style="grid-row: 3; grid-column: 19 / span 4;">
+                    <span class="start-time">10:30</span>
+                    <span class="end-time">10:50</span>
+                </div>
+                <div class="event-block" style="grid-row: 3; grid-column: 31 / span 4;">
+                    <span class="start-time">11:30</span>
+                    <span class="end-time">11:50</span>
+                </div>
+                <!-- 4個目 -->
+                <div class="event-block" style="grid-row: 4; grid-column: 4 / span 8;">
+                    <span class="start-time">9:15</span>
+                    <span class="end-time">9:55</span>
+                </div>
+                <div class="event-block" style="grid-row: 4; grid-column: 18 / span 8;">
+                    <span class="start-time">10:25</span>
+                    <span class="end-time">11:05</span>
+                </div>
+                <div class="event-block" style="grid-row: 4; grid-column: 32 / span 8;">
+                    <span class="start-time">11:35</span>
+                    <span class="end-time">12:15</span>
+                </div>
+                <!-- 5個目 -->
+                <div class="event-block" style="grid-row: 5; grid-column: 13 / span 4;">
+                    <span class="start-time">10:00</span>
+                    <span class="end-time">10:20</span>
+                </div>
+                <div class="event-block" style="grid-row: 5; grid-column: 31 / span 4;">
+                    <span class="start-time">11:30</span>
+                    <span class="end-time">11:50</span>
+                </div>
+                <!-- 6個目 -->
+                <div class="event-block" style="grid-row: 6; grid-column: 4 / span 4;">
+                    <span class="start-time">9:15</span>
+                    <span class="end-time">9:35</span>
+                </div>
+                <div class="event-block" style="grid-row: 6; grid-column: 14 / span 4;">
+                    <span class="start-time">10:05</span>
+                    <span class="end-time">10:25</span>
+                </div>
+                <div class="event-block" style="grid-row: 6; grid-column: 24 / span 4;">
+                    <span class="start-time">10:55</span>
+                    <span class="end-time">11:15</span>
+                </div>
+                <div class="event-block" style="grid-row: 6; grid-column: 34 / span 4;">
+                    <span class="start-time">11:45</span>
+                    <span class="end-time">12:05</span>
+                </div>
+                <div class="event-block" style="grid-row: 6; grid-column: 44 / span 4;">
+                    <span class="start-time">12:35</span>
+                    <span class="end-time">12:55</span>
+                </div>
+                <!-- 7個目 -->
+                <div class="event-block" style="grid-row: 7; grid-column: 7 / span 6;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 7; grid-column: 19 / span 6;">
+                    <span class="start-time">10:30</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 7; grid-column: 37 / span 6;">
+                    <span class="start-time">12:00</span>
+                    <span class="end-time">12:30</span>
+                </div>
+                <!-- 8個目 -->
+                <div class="event-block" style="grid-row: 8; grid-column: 1 / span 6;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time">9:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 8; grid-column: 9 / span 6;">
+                    <span class="start-time">9:40</span>
+                    <span class="end-time">10:10</span>
+                </div>
+                <div class="event-block" style="grid-row: 8; grid-column: 17 / span 6;">
+                    <span class="start-time">10:20</span>
+                    <span class="end-time">10:50</span>
+                </div>
+                <div class="event-block" style="grid-row: 8; grid-column: 25 / span 6;">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">11:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 8; grid-column: 33 / span 6;">
+                    <span class="start-time">11:40</span>
+                    <span class="end-time">12:10</span>
+                </div>
+                <div class="event-block" style="grid-row: 8; grid-column: 41 / span 6;">
+                    <span class="start-time">11:20</span>
+                    <span class="end-time">12:50</span>
+                </div>
+                <!-- 9個目 -->
+                <div class="event-block" style="grid-row: 9; grid-column: 9 / span 4;">
+                    <span class="start-time">9:40</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 9; grid-column: 27 / span 4;">
+                    <span class="start-time">11:10</span>
+                    <span class="end-time">11:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 9; grid-column: 45 / span 4;">
+                    <span class="start-time">12:40</span>
+                    <span class="end-time">13:00</span>
+                </div>
+                <!-- div line -->
+                <div class="divide-line" id="divide-line"></div>
+                <!-- div line end -->
+                <div class="event-block" style="grid-row: 10; grid-column: 19 / span 6;">
+                    <span class="start-time">10:30</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <!-- 11 -->
+                <div class="event-block" style="grid-row: 11; grid-column: 7 / span 6;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <!-- 12 -->
+                <div class="event-block" style="grid-row: 12; grid-column: 1 / span 48;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time"></span>
+                </div>
+                <!-- 13 -->
+                <div class="event-block" style="grid-row: 13; grid-column: 7 / span 6;">
+                    <span class="start-time">9:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="event-block" style="grid-row: 13; grid-column: 25 / span 6;">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">11:30</span>
+                </div>
+                <!-- 14 -->
+                <div class="event-block" style="grid-row: 14; grid-column: 1 / span 24;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <!-- 15 -->
+                <div class="event-block" style="grid-row: 15; grid-column: 1 / span 48;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time"></span>
+                </div>
+                <!-- 16 -->
+                <div class="event-block" style="grid-row: 16; grid-column: 1 / span 6;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time">9:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 16; grid-column: 13 / span 6;">
+                    <span class="start-time">10:00</span>
+                    <span class="end-time">10:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 16; grid-column: 25 / span 6;">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">11:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 16; grid-column: 37 / span 6;">
+                    <span class="start-time">12:00</span>
+                    <span class="end-time">12:30</span>
+                </div>
+                <!-- 17 -->
+                <div class="event-block" style="grid-row: 17; grid-column: 1 / span 30;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time"></span>
+                </div>
+                <!-- 18 -->
+                <div class="event-block" style="grid-row: 18; grid-column: 5 / span 6;">
+                    <span class="start-time">9:20</span>
+                    <span class="end-time">9:50</span>
+                </div>
+                <div class="event-block" style="grid-row: 18; grid-column: 15 / span 6;">
+                    <span class="start-time">10:10</span>
+                    <span class="end-time">10:40</span>
+                </div>
+                <div class="event-block" style="grid-row: 18; grid-column: 25 / span 6;">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">11:30</span>
+                </div>
+                <div class="event-block" style="grid-row: 18; grid-column: 35 / span 6;">
+                    <span class="start-time">11:50</span>
+                    <span class="end-time">12:20</span>
+                </div>
+                <!-- 19 -->
+                <div class="event-block" style="grid-row: 19; grid-column: 13 / span 12;">
+                    <span class="start-time">10:00</span>
+                    <span class="end-time">10:20</span>
+                </div>
+                <!-- 20 -->
+                <div class="event-block" style="grid-row: 20; grid-column: 1 / span 48;">
+                    <span class="start-time">9:00</span>
+                    <span class="end-time"></span>
+                </div>
+                <!-- div line -->
+                <div class="divide-line2" id="divide-line2" style="top: 1000px;"></div>
+                <!-- div line end -->
+                <!-- 21 -->
+                <div class="event-block" style="grid-row: 21; grid-column: 16 / span 9;">
+                    <span class="start-time">10:15</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <!-- 22 -->
+                <div class="event-block" style="grid-row: 22; grid-column: 27 / span 10;">
+                    <span class="start-time">11:10</span>
+                    <span class="end-time">12:00</span>
+                </div>
+                <div class="current-time-line" id="current-time-line"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
